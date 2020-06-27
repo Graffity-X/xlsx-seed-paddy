@@ -12,4 +12,4 @@ services:
     environment:
         - VERSION
         - GLOB_TEXT=src/*.xlsx
-        - DATA_START_ROW=4
+        - DATA_START_ROW=3

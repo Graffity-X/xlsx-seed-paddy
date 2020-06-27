@@ -11,7 +11,7 @@ const {
 } = process.env;
 
 const DEFAULT_TARGET_VERSION = '1.1.3'
-const DEFAULT_COLUMN_NAMES_ROW = '2'　//Excelのカラムの行の位置
+const DEFAULT_COLUMN_NAMES_ROW = '1'　//Excelのカラムの行の位置
 const DEFAULT_DATA_START_ROW = '3' //データの始まる行の位置
 
 function main() {
