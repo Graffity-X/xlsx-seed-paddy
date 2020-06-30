@@ -12,9 +12,9 @@
     "commander": "^2.9.0",
     "fs": "0.0.1-security",
     "glob": "^7.1.6",
-    "js-yaml": "^3.7.0",
+    "js-yaml": "^3.14.0",
     "write-yaml": "^0.2.2",
-    "xlsx2seed": "git://github.com/mitaku/xlsx2seed.js.git"
+    "xlsx2seed": "^1.2.1"
   },
   "devDependencies": {},
   "description": ""

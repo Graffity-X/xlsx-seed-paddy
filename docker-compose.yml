@@ -1,0 +1,15 @@
+version: '3'
+services:
+  server_seed:
+    build:
+      context: .
+    # 権限がないためローカルのDockerfileを参照
+    # image: docker.pkg.github.com/mitaku/xlsx-seed-paddy/xlsx-seed-paddy:latest
+    volumes:
+        - ./src:/opt/node_app/app/src/
+        - ./dist:/opt/node_app/app/dist/:rw
+    # index.jsで必要な変数を環境変数として定義
+    environment:
+        - VERSION
+        - GLOB_TEXT=src/*.xlsx
+        - DATA_START_ROW=3

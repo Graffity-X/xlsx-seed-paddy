@@ -33,6 +33,12 @@ WORKDIR /opt/node_app/app
 COPY . .
 
 COPY docker-entrypoint.sh /usr/local/bin/
+
+# https://github.com/docker-library/postgres/issues/296
+# ローカルでは権限不足のため追加
+RUN chmod 777 /usr/local/bin/docker-entrypoint.sh \
+    && ln -s /usr/local/bin/docker-entrypoint.sh /
+    
 ENTRYPOINT ["docker-entrypoint.sh"]
 
 
